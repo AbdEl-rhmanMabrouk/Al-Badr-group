@@ -1,0 +1,507 @@
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Alexandria', sans-serif;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        text-transform: capitalize;
+        height: 100vh;
+        width: 100%;
+        color: white;
+        background-image: url(../img/baground.png);
+    }
+    
+    i {
+        color: white;
+    }
+    
+    .active {
+        display: block;
+    }
+    /* Small */
+    
+    @media (min-width: 768px) {
+        .container {
+            width: 750px;
+        }
+    }
+    /* Medium */
+    
+    @media (min-width: 992px) {
+        .container {
+            width: 970px;
+        }
+    }
+    /* Large */
+    
+    @media (min-width: 1200px) {
+        .container {
+            width: 1170px;
+        }
+    }
+    /* start logo */
+    
+    .logo {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        justify-content: space-around;
+        padding: 13px;
+        gap: 3px;
+        position: relative;
+    }
+    
+    .logo .car-marct {
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 9px 0px #ddd;
+        border-radius: 5px;
+        padding: 20px 0 20px 12px;
+        cursor: pointer;
+    }
+    
+    .logo .car-marct .namber {
+        width: 20px;
+        height: 20px;
+        flex-grow: 0;
+        padding: 0 5px;
+        border-radius: 9px;
+        background-color: #5c63a9;
+        position: relative;
+    }
+    
+    .logo .logoo {
+        width: 50px;
+        height: 50px;
+        flex-grow: 0;
+        margin: 0 0 0 8px;
+    }
+    
+    .logo .car-marct .car {
+        padding: 8px;
+    }
+    
+    .logo .lange {
+        width: fit-content;
+        height: 100%;
+        flex-grow: 0;
+        display: flex;
+        gap: 8px;
+        padding: 0;
+    }
+    
+    .logo .lange>img {
+        width: 44px;
+        height: 44px;
+        flex-grow: 0;
+        box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2);
+        border: solid 2px #545fcd;
+        border-radius: 50%;
+    }
+    
+    .logo .lange .lange2 {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.05);
+        cursor: pointer;
+    }
+    
+    .logo .lange .lange2>i {
+        width: 16px;
+        height: 16px;
+        flex-grow: 0;
+        object-fit: contain;
+    }
+    
+    .logo .lange .lange2 h3 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: 0.5ms;
+        position: relative;
+    }
+    
+    .logo .lange .lange2 h3 ul {
+        position: absolute;
+        top: 48px;
+        left: -30px;
+        font-size: 14px;
+        display: none;
+    }
+    
+    .logo .lange .lange2 h3 ul li {
+        text-align: center;
+        color: black;
+        background-color: #fff;
+        padding: 10px 30px;
+        transition: 0.5s;
+        margin-bottom: 5px;
+        border-radius: 8px;
+        padding: 12px 4px;
+    }
+    
+    .logo .lange .lange2 h3:hover ul {
+        display: block;
+    }
+    
+    .Options ul .plaaaaa ul li:hover,
+    .logo .lange .lange2 h3 ul li:hover {
+        background-color: #202c99;
+        color: white;
+    }
+    
+    .logo .lange .lange2 h3>img {
+        width: 18px;
+        height: 18px;
+        flex-grow: 0;
+        object-fit: contain;
+    }
+    
+    .logo .lange .lange2 h3 span {
+        display: block;
+        font-size: 14px;
+        text-align: left;
+        color: #fff;
+        padding: 8px;
+    }
+    
+    .logo .sarch {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .logo .sarch input {
+        width: 516px;
+        height: 100%;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 0 50px;
+        border-radius: 8px;
+        border: solid 1px #5c63a9;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .logo .sarch input::placeholder {
+        font-size: 14px;
+        text-align: right;
+        color: #8b91c1;
+    }
+    
+    .logo .sarch .sarchh {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        flex-grow: 0;
+        left: 10px;
+        top: 9px;
+    }
+    
+    .logo .sarch span {
+        width: 2px;
+        height: 36px;
+        flex-grow: 0;
+        background-color: #8a90c0;
+        display: block;
+        position: absolute;
+        left: 50px;
+        top: 7px;
+    }
+    
+    .logo .logo3 {
+        height: 100%;
+    }
+    /* end logo */
+    /* start-Options */
+    
+    .Options {
+        width: 100%;
+        height: fit-content;
+        background-color: orange;
+        display: flex;
+        padding: 14px;
+        font-size: 16px;
+        justify-content: space-between;
+    }
+    
+    .Options .ferst {
+        padding: 0 10px;
+    }
+    
+    .Options ul {
+        display: flex;
+    }
+    
+    .Options ul li {
+        padding: 5px 10px;
+    }
+    
+    .Options ul .plaaaaa {
+        position: relative;
+    }
+    
+    .Options ul .plaaaaa ul {
+        position: absolute;
+        text-align: center;
+        top: 37px;
+        left: 15px;
+        display: none;
+    }
+    
+    .Options ul .plaaaaa ul li {
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 8px 18px;
+        margin-bottom: 5px;
+        border-radius: 16px;
+    }
+    /* end-Options */
+    /* start contant */
+    
+    .contant {
+        display: flex;
+        justify-content: space-around;
+        margin: 30px;
+    }
+    
+    .contant .frest-row .box {
+        width: 391px;
+        height: fit-content;
+        padding: 24px;
+        border-radius: 16px;
+        box-shadow: 0 0 55px 0 rgba(21, 34, 156, 0.6);
+        border: solid 2px #545fcd;
+        background-color: rgba(2, 10, 84, 0.2);
+    }
+    
+    .contant .frest-row .box>h3 {
+        align-self: stretch;
+        font-size: 20px;
+        text-align: center;
+        font-weight: normal;
+        color: #fff;
+        border-bottom: solid 2px #545fcd;
+        padding-bottom: 25px;
+    }
+    
+    .contant .frest-row .box .input {
+        display: flex;
+        position: relative;
+        padding: 24px 0;
+    }
+    
+    .contant .frest-row .box .input input {
+        width: 100%;
+        height: 48px;
+        align-self: stretch;
+        flex-grow: 0;
+        padding: 0 16px 0 85px;
+        border-radius: 8px;
+        border: solid 2px #545fcd;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .contant .frest-row .box .input input::placeholder {
+        font-size: 14px;
+        text-align: right;
+        color: #8b91c1;
+    }
+    
+    .contant .frest-row .box .input h3 {
+        position: absolute;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        border: solid 2px #545fcd;
+        background-color: rgba(2, 10, 84, 0.2);
+        height: 48px;
+        font-weight: normal;
+        border-radius: 8px 0 0 8px;
+    }
+    
+    .contant .soldd h3 {
+        font-weight: normal;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 24px;
+    }
+    
+    .contant .soldd .total {
+        border-top: solid 2px #545fcd;
+        padding-top: 24px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .contant .box .done {
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        box-shadow: 0 0 40px 0 rgba(0, 255, 39, 0.4);
+        background-color: #3ca54c;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .contant .box>p {
+        padding-top: 20px;
+        font-size: 10px;
+        text-align: center;
+    }
+    
+    .contant .frest-row .marc {
+        padding: 8px;
+        border-radius: 8px;
+        background-color: #db9000;
+        box-shadow: 0 0 40px 0 rgba(236, 181, 93, 0.4);
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 20px;
+    }
+    
+    .scande-row {
+        width: 840px;
+    }
+    
+    .scande-row .car55 {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 16px;
+        border-radius: 16px;
+        background-color: rgba(0, 0, 0, 0.1);
+        display: flex;
+        margin: 10px;
+    }
+    
+    .scande-row .car55 span {
+        width: 88px;
+        height: 24px;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        padding: 2px 8px;
+        border-radius: 9px;
+        background-color: #545fcd;
+    }
+    
+    .scande-row .car55 p {
+        font-size: 24px;
+        font-weight: normal;
+        margin-left: auto;
+    }
+    
+    .scande-row .car55 img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .connnnn {
+        width: 100%;
+        height: 133px;
+        display: flex;
+        border-radius: 16px;
+        box-shadow: 0 0 24px 0 rgba(255, 255, 255, 0.1);
+        border: solid 2px #545fcd;
+        background-color: rgba(2, 10, 84, 0.2);
+        margin: 10px;
+    }
+    
+    .connnnn .namber {
+        border-right: 2px solid #545fcd;
+        align-self: stretch;
+        padding: 10px;
+        width: 20%;
+    }
+    
+    .connnnn .namber h5 {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: normal;
+    }
+    
+    .connnnn .namber h5 span img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    
+    .connnnn .namber h3 {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .connnnn .namber p {
+        font-size: 14px;
+        text-align: center;
+        color: #7d89fc;
+    }
+    
+    .connnnn .text {
+        padding: 0 0 15px;
+        width: 80%;
+    }
+    
+    .connnnn .text h3 {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    
+    .connnnn .text h3 span img {
+        width: 160px;
+    }
+    
+    .connnnn .text p {
+        font-size: 12px;
+        text-align: right;
+        color: #7d89fc;
+    }
+    
+    .connnnn .img {
+        height: 100%;
+    }
+    
+    .connnnn .img img {
+        width: 160px;
+    }
+    /* end contant */
